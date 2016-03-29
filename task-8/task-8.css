@@ -1,8 +1,13 @@
+/**
+* task1_8.css
+*/
+/*start reset*/
 *{
 	padding: 0;
 	margin: 0;
 	background-color: #ccc;
 }
+/*end reset*/
 .wrapper{
 	padding: 10px;
 	float: left;
