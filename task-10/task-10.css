@@ -1,0 +1,56 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ccc;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+.flex-container {
+    display: flex;
+}
+.flex-item {
+	flex: 0 0 150px;
+    border: solid thin #f00;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+.flex1 {
+    height: 120px;
+}
+
+.flex2 {
+	height: 100px;
+}
+
+.flex3 {
+    height: 40px;
+}
+
+.flex4 {
+    height: 200px;
+    border-color: #00f;
+}
+@media screen and (max-width: 639px){
+	.flex-container{
+		justify-content: space-between;
+		flex-flow: row wrap;
+		align-items: flex-start;
+	}
+	.flex4{
+		order: -1;
+	}
+}
+/*and 和后面的括号之间必须加上空格*/
+@media screen and (min-width: 640px) {
+	.flex-container{
+		justify-content: space-between;
+   	 	align-items: center;
+	}
+}
